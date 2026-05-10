@@ -3,41 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Gizlilik Politikası - Ezan Vakti</title>
+  <meta name="description" content="Ezan Vakti uygulaması gizlilik politikası. Namaz vakitleri, kıble, bildirim, reklam ve uygulama içi tercihlerin kullanımı hakkında bilgiler." />
+
   <style>
+    :root {
+      --bg: #0d0f14;
+      --card: #121826;
+      --card-2: #161d2b;
+      --gold: #d4af37;
+      --green: #10b981;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --soft: #94a3b8;
+      --border: rgba(255,255,255,0.10);
+      --shadow: rgba(0,0,0,0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      background: #0d0f14;
-      color: #f5f5f5;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
+      background:
+        radial-gradient(circle at top left, rgba(16,185,129,0.13), transparent 34%),
+        radial-gradient(circle at top right, rgba(212,175,55,0.12), transparent 32%),
+        var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.75;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 940px;
       margin: 40px auto;
-      padding: 24px;
-      background: #121826;
-      border-radius: 18px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+      padding: 28px;
+      background: linear-gradient(180deg, var(--card-2), var(--card));
+      border-radius: 22px;
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 50px var(--shadow);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .brand-badge {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--gold), var(--green));
+      color: #07110e;
+      font-size: 24px;
+      font-weight: 900;
+      box-shadow: 0 12px 28px rgba(16,185,129,0.18);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 20px;
+      line-height: 1.1;
+    }
+
+    .brand-text span {
+      color: var(--soft);
+      font-size: 13px;
+      font-weight: 600;
     }
 
     h1 {
-      color: #d4af37;
-      margin-top: 0;
-      font-size: 32px;
+      color: var(--gold);
+      margin: 0 0 6px;
+      font-size: 34px;
+      line-height: 1.2;
+      letter-spacing: -0.4px;
     }
 
     h2 {
-      color: #10b981;
-      margin-top: 32px;
+      color: var(--green);
+      margin-top: 34px;
+      margin-bottom: 10px;
       font-size: 22px;
+      line-height: 1.3;
+    }
+
+    h3 {
+      color: var(--gold);
+      margin-top: 20px;
+      margin-bottom: 8px;
+      font-size: 18px;
     }
 
     p, li {
       font-size: 16px;
-      color: #eaeaea;
+      color: var(--muted);
     }
 
     ul {
@@ -45,14 +112,24 @@
     }
 
     .muted {
-      color: #bdbdbd;
+      color: var(--soft);
       font-size: 14px;
-      margin-bottom: 24px;
+      margin-bottom: 26px;
+    }
+
+    .notice {
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(16,185,129,0.08);
+      border: 1px solid rgba(16,185,129,0.20);
+      color: var(--muted);
+      margin: 22px 0;
     }
 
     a {
-      color: #d4af37;
+      color: var(--gold);
       text-decoration: none;
+      font-weight: 700;
     }
 
     a:hover {
@@ -60,108 +137,235 @@
     }
 
     .footer {
-      margin-top: 36px;
+      margin-top: 38px;
       padding-top: 18px;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      color: #bdbdbd;
+      border-top: 1px solid var(--border);
+      color: var(--soft);
       font-size: 14px;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        margin: 18px auto;
+        padding: 20px;
+        border-radius: 18px;
+        width: calc(100% - 24px);
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p, li {
+        font-size: 15px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Gizlilik Politikası – Ezan Vakti</h1>
-    <div class="muted">Son güncelleme tarihi: 5 Nisan 2026</div>
+  <main class="container">
+    <div class="brand">
+      <div class="brand-badge">☪</div>
+      <div class="brand-text">
+        <strong>Ezan Vakti</strong>
+        <span>Alpisoft Studio</span>
+      </div>
+    </div>
+
+    <h1>Gizlilik Politikası</h1>
+    <div class="muted">Son güncelleme tarihi: 10 Mayıs 2026</div>
 
     <p>
-      Ezan Vakti uygulaması, kullanıcılara namaz vakitlerini görüntüleme, kıble yönünü bulma,
-      günlük dini içeriklere erişme ve bildirim alma özellikleri sunar. Bu gizlilik politikası,
-      uygulamanın hangi bilgileri nasıl kullandığını açıklar.
+      Ezan Vakti uygulaması; namaz vakitlerini görüntüleme, sıradaki vakti takip etme,
+      kıble yönünü bulma, Kur’an ve meal içeriklerine erişme, tesbih kullanma,
+      namaz takibi yapma, günlük dini içerikleri görüntüleme ve bildirim alma gibi özellikler sunar.
     </p>
+
+    <p>
+      Bu gizlilik politikası, Ezan Vakti uygulamasının hangi bilgileri hangi amaçlarla kullandığını,
+      cihaz üzerinde hangi tercihleri saklayabileceğini ve üçüncü taraf hizmetlerle ilgili temel bilgileri açıklar.
+    </p>
+
+    <div class="notice">
+      Ezan Vakti, kullanıcıdan doğrudan ad, soyad, telefon numarası veya e-posta adresi toplama amacı taşımaz.
+      Uygulama içindeki birçok tercih cihaz üzerinde yerel olarak saklanır.
+    </div>
 
     <h2>1. Toplanan ve Kullanılan Bilgiler</h2>
     <p>
-      Ezan Vakti uygulaması, uygulamanın temel işlevlerini yerine getirebilmesi için bazı bilgileri işleyebilir.
+      Ezan Vakti uygulaması, temel özelliklerin çalışması ve kullanıcı deneyiminin kişiselleştirilmesi için bazı bilgileri işleyebilir.
     </p>
+
     <p>Uygulama kapsamında aşağıdaki kullanıcı tercihleri cihaz üzerinde yerel olarak saklanabilir:</p>
+
     <ul>
-      <li>Seçilen şehir</li>
+      <li>Seçilen şehir bilgisi</li>
       <li>Favori şehirler</li>
       <li>Bildirim tercihleri</li>
-      <li>Titreşim, ezan sesi ve ön hatırlatma ayarları</li>
+      <li>Ön hatırlatma ayarları</li>
+      <li>Titreşim ve ses tercihleri</li>
+      <li>Tema tercihi</li>
+      <li>Günlük namaz takip kayıtları</li>
+      <li>Tesbih / zikir sayaç verileri</li>
+      <li>Favori içerikler veya uygulama içi bazı tercih ayarları</li>
+      <li>Uygulama değerlendirme hatırlatıcısının gösterilip gösterilmeyeceğine dair tercih bilgisi</li>
     </ul>
+
     <p>
-      Bu bilgiler, uygulamanın kullanıcıya daha kişiselleştirilmiş ve düzenli bir deneyim sunabilmesi amacıyla kullanılır.
+      Bu bilgiler, uygulamanın daha düzenli, kişiselleştirilmiş ve kullanışlı bir deneyim sunabilmesi amacıyla kullanılır.
+      Bu veriler temel olarak cihaz üzerinde saklanır.
     </p>
 
     <h2>2. Konum Bilgisi</h2>
     <p>
       Uygulama, kıble yönünü daha doğru belirleyebilmek için cihazın yaklaşık veya hassas konum bilgisine erişim isteyebilir.
     </p>
+
     <p>
       Konum izni yalnızca ilgili özelliğin çalışması amacıyla kullanılır. Kullanıcı izin vermediği sürece uygulama konuma erişmez.
+      Kullanıcı, cihaz ayarları üzerinden konum iznini dilediği zaman kapatabilir.
     </p>
 
     <h2>3. Bildirimler</h2>
     <p>
-      Uygulama, namaz vakti hatırlatmaları ve tam vakit bildirimleri gönderebilmek için bildirim izni isteyebilir.
-      Bildirimler, kullanıcının seçtiği ayarlara göre çalışır.
+      Ezan Vakti, namaz vakti hatırlatmaları, tam vakit bildirimleri ve bazı içerik hatırlatmaları gönderebilmek için bildirim izni isteyebilir.
     </p>
 
-    <h2>4. Reklam Hizmetleri</h2>
+    <p>
+      Bildirimler, kullanıcının uygulama içinde veya cihaz ayarlarında belirlediği tercihlere göre çalışır.
+      Kullanıcı bildirim izinlerini cihaz ayarlarından dilediği zaman değiştirebilir.
+    </p>
+
+    <h2>4. Namaz Takibi</h2>
+    <p>
+      Uygulamada bulunan namaz takip sistemi, kullanıcının günlük namazlarını işaretleyebilmesi için hazırlanmıştır.
+      Sabah, Öğle, İkindi, Akşam ve Yatsı vakitleri için yapılan işaretlemeler cihaz üzerinde saklanabilir.
+    </p>
+
+    <p>
+      Bu kayıtlar, günlük ve haftalık ilerleme gösterebilmek amacıyla kullanılır. Namaz takip verileri kullanıcıya kişisel takip kolaylığı sağlamak içindir.
+    </p>
+
+    <h2>5. Kur’an, Meal ve Sesli Okuma</h2>
+    <p>
+      Uygulama, Kur’an sureleri, Arapça metinler ve Türkçe meal içeriklerini gösterebilir.
+      Sesli okuma özelliği için internet bağlantısı üzerinden ses dosyaları veya ilgili içerik kaynakları kullanılabilir.
+    </p>
+
+    <p>
+      Bu özelliklerin kullanılabilmesi için internet bağlantısı gerekebilir. Kullanıcıdan sesli okuma özelliği için doğrudan kişisel bilgi istenmez.
+    </p>
+
+    <h2>6. Günlük İçerikler ve Özel Gün Mesajları</h2>
+    <p>
+      Uygulama; günün ayeti, günün hadisi, günün duası ve özel gün mesajları gibi içerikler gösterebilir.
+      Bazı içerikler uygulama içinden, bazı içerikler ise internet üzerinden güncel olarak alınabilir.
+    </p>
+
+    <p>
+      Özel gün mesajları, duyurular veya benzeri içerikler internet üzerinden harici bir JSON dosyası aracılığıyla güncellenebilir.
+      Bu yapı, uygulama güncellemesi gerektirmeden kullanıcılara güncel içerik sunmak amacıyla kullanılır.
+    </p>
+
+    <h2>7. İnternet Erişimi</h2>
+    <p>
+      Uygulama, namaz vakitlerini almak, günlük içerikleri güncellemek, özel gün mesajlarını kontrol etmek,
+      Kur’an veya sesli okuma içeriklerine erişmek ve reklam hizmetlerini çalıştırmak için internet bağlantısı kullanabilir.
+    </p>
+
+    <p>
+      İnternet bağlantısı olmadığında bazı veriler cihazda kayıtlı son bilgilerle gösterilebilir veya ilgili özellikler sınırlı çalışabilir.
+    </p>
+
+    <h2>8. Reklam Hizmetleri</h2>
     <p>
       Ezan Vakti uygulaması, reklam göstermek için üçüncü taraf reklam hizmetleri kullanabilir.
-      Bu kapsamda Google AdMob gibi hizmetler, reklam sunumu, performans ölçümü ve uygun reklam deneyimi
-      sağlanması amacıyla bazı teknik verileri işleyebilir.
-    </p>
-    <p>
-      Bu verilerin işlenmesi, ilgili üçüncü taraf hizmet sağlayıcının kendi gizlilik politikalarına tabidir.
+      Bu kapsamda Google AdMob gibi hizmetler; reklam sunumu, reklam performansı ölçümü, sahtecilik önleme
+      ve uygun reklam deneyimi sağlanması amacıyla bazı teknik verileri işleyebilir.
     </p>
 
-    <h2>5. İnternet Erişimi</h2>
     <p>
-      Uygulama, namaz vakitleri ve benzeri içerikleri güncel şekilde sunabilmek için internet bağlantısı kullanabilir.
+      Reklam hizmetleri kapsamında cihaz bilgileri, reklam kimliği, yaklaşık konum, uygulama etkileşimleri veya benzeri teknik bilgiler
+      üçüncü taraf sağlayıcıların kendi politikaları kapsamında işlenebilir.
     </p>
 
-    <h2>6. Veri Paylaşımı</h2>
     <p>
-      Uygulama, kullanıcıdan doğrudan ad, soyad, e-posta adresi veya telefon numarası toplama amacı taşımaz.
+      Google AdMob ve ilgili reklam hizmetlerinin veri işleme süreçleri, ilgili üçüncü taraf hizmet sağlayıcının kendi gizlilik politikalarına tabidir.
     </p>
+
+    <h2>9. Uygulama Değerlendirme Özelliği</h2>
     <p>
-      Uygulama tarafından cihaz üzerinde saklanan kullanıcı tercihleri, temel olarak uygulamanın çalışması için kullanılır.
+      Uygulama, belirli kullanım koşulları sağlandığında kullanıcıdan uygulamayı değerlendirmesini isteyebilir.
+      Bu özellik, Google Play'in uygulama içi değerlendirme altyapısı veya mağaza sayfasına yönlendirme mekanizması üzerinden çalışabilir.
     </p>
+
     <p>
-      Ancak reklam ve analiz hizmetlerinde kullanılan üçüncü taraf SDK veya servisler,
+      Değerlendirme isteğinin ne zaman gösterileceğini belirlemek için uygulama açılış sayısı, son gösterim zamanı
+      veya kullanıcının “bir daha gösterme” tercihi gibi bilgiler cihaz üzerinde yerel olarak saklanabilir.
+    </p>
+
+    <h2>10. Veri Paylaşımı</h2>
+    <p>
+      Ezan Vakti, kullanıcıdan doğrudan ad, soyad, e-posta adresi veya telefon numarası toplama amacı taşımaz.
+      Cihaz üzerinde saklanan kullanıcı tercihleri temel olarak uygulamanın çalışması için kullanılır.
+    </p>
+
+    <p>
+      Bununla birlikte, reklam hizmetleri, mağaza değerlendirme altyapısı, içerik kaynakları veya benzeri üçüncü taraf hizmetler,
       kendi teknik süreçleri kapsamında belirli verileri işleyebilir.
     </p>
 
-    <h2>7. Veri Güvenliği</h2>
+    <h2>11. Veri Güvenliği</h2>
     <p>
       Kullanıcı verilerinin korunması için makul teknik önlemler alınmaya çalışılmaktadır.
-      Bununla birlikte, internet üzerinden gerçekleştirilen veri aktarımının tamamen risksiz olduğu garanti edilemez.
+      Ancak internet üzerinden gerçekleştirilen veri aktarımının tamamen risksiz olduğu garanti edilemez.
     </p>
 
-    <h2>8. Çocukların Gizliliği</h2>
+    <h2>12. Çocukların Gizliliği</h2>
     <p>
-      Uygulama, özel olarak çocuklara yönelik tasarlanmamıştır. Bilinçli olarak çocuklardan kişisel veri toplanması hedeflenmez.
+      Ezan Vakti uygulaması özel olarak çocuklara yönelik tasarlanmamıştır.
+      Bilinçli olarak çocuklardan kişisel veri toplanması hedeflenmez.
     </p>
 
-    <h2>9. Politika Değişiklikleri</h2>
+    <h2>13. Kullanıcı Tercihleri ve İzinler</h2>
     <p>
-      Bu gizlilik politikası zaman zaman güncellenebilir. Güncellenmiş sürüm yayımlandığı tarihten itibaren geçerli olur.
+      Kullanıcılar cihaz ayarları üzerinden konum, bildirim ve diğer uygulama izinlerini diledikleri zaman değiştirebilir.
+      Uygulama içi tercihler de uygulamanın ayar sayfası veya cihaz ayarları üzerinden yönetilebilir.
     </p>
 
-    <h2>10. İletişim</h2>
+    <h2>14. Politika Değişiklikleri</h2>
     <p>
-      Gizlilik politikasıyla ilgili sorularınız için geliştirici ile aşağıdaki e-posta adresi üzerinden iletişime geçebilirsiniz:
+      Bu gizlilik politikası zaman zaman güncellenebilir.
+      Güncellenmiş sürüm bu sayfada yayımlandığı tarihten itibaren geçerli olur.
     </p>
+
+    <h2>15. İletişim</h2>
+    <p>
+      Gizlilik politikasıyla ilgili sorularınız, önerileriniz veya destek talepleriniz için geliştirici ile aşağıdaki e-posta adresi üzerinden iletişime geçebilirsiniz:
+    </p>
+
     <p>
       <a href="mailto:ezanvakti.official@gmail.com">ezanvakti.official@gmail.com</a>
     </p>
 
     <div class="footer">
       © 2026 Ezan Vakti. Tüm hakları saklıdır.
+      <div class="footer-links">
+        <a href="mailto:ezanvakti.official@gmail.com">İletişim</a>
+      </div>
     </div>
-  </div>
+  </main>
 </body>
 </html>
