@@ -7,6 +7,9 @@
   <title>Gizlilik Politikası - Ezan Vakti</title>
   <meta name="description" content="Ezan Vakti uygulaması gizlilik politikası. Namaz vakitleri, kıble, bildirim, reklam ve uygulama içi tercihlerin kullanımı hakkında bilgiler." />
 
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
   <style>
     :root {
       --bg: #0d0f14;
@@ -54,17 +57,14 @@
       margin-bottom: 22px;
     }
 
-    .brand-badge {
-      width: 48px;
-      height: 48px;
-      border-radius: 16px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, var(--gold), var(--green));
-      color: #07110e;
-      font-size: 24px;
-      font-weight: 900;
+    .brand-logo {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      object-fit: cover;
       box-shadow: 0 12px 28px rgba(16,185,129,0.18);
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #0f172a;
     }
 
     .brand-text strong {
@@ -93,13 +93,6 @@
       margin-bottom: 10px;
       font-size: 22px;
       line-height: 1.3;
-    }
-
-    h3 {
-      color: var(--gold);
-      margin-top: 20px;
-      margin-bottom: 8px;
-      font-size: 18px;
     }
 
     p, li {
@@ -159,6 +152,12 @@
         width: calc(100% - 24px);
       }
 
+      .brand-logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 16px;
+      }
+
       h1 {
         font-size: 28px;
       }
@@ -177,7 +176,7 @@
 <body>
   <main class="container">
     <div class="brand">
-      <div class="brand-badge">☪</div>
+      <img src="logo.png" alt="Ezan Vakti Logo" class="brand-logo" />
       <div class="brand-text">
         <strong>Ezan Vakti</strong>
         <span>Alpisoft Studio</span>
