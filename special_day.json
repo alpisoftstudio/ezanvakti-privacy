@@ -1,11 +1,8 @@
 {
-  "active": false,
+  "active": true,
   "title": "19 Mayıs Atatürk’ü Anma, Gençlik ve Spor Bayramımız kutlu olsun.",
-  "message": "19 Mayıs; bir milletin boyun eğmeyeceğini tüm dünyaya gösterdiği gündür.
-Başta Mustafa Kemal Atatürk olmak üzere tüm kahramanlarımızı saygı, minnet ve özlemle anıyoruz.
-
-Gençliğin azmi, cesareti ve umudu hiç bitmesin.",
+  "message": "19 Mayıs Atatürk’ü Anma, Gençlik ve Spor Bayramımız kutlu olsun. Bağımsızlık meşalesini yakan Gazi Mustafa Kemal Atatürk’ü ve tüm kahramanlarımızı rahmet, minnet ve saygıyla anıyoruz.",
   "source": "Ezan Vakti",
   "buttonText": "Paylaş",
-  "type": "mothers_day"
+  "type": "national"
 }
